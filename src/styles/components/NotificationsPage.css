@@ -1,0 +1,159 @@
+.notifications-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.notifications-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-container label {
+  font-weight: bold;
+}
+
+.filter-container input,
+.filter-container select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.notification-group {
+  margin-bottom: 20px;
+}
+
+.notification-group h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.notifications-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notifications-container li {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.notifications-container li.unread {
+  background-color: #fff8dc;
+}
+
+.notifications-container li.read {
+  background-color: #e6ffe6;
+}
+
+.notifications-container li:hover {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notifications-container small {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.notification-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.notification-actions button {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notification-actions button:first-of-type {
+  background-color: #007bff;
+}
+
+.notification-actions button:last-of-type {
+  background-color: #dc3545;
+}
+
+.notification-actions button:hover {
+  opacity: 0.9;
+}
+
+.notification-actions button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Pagination styles */
+.pagination1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 5px;
+}
+
+.pagination1 button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #000;
+}
+
+.pagination1 button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination1 button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination1 button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  
+}
+
+/* Notification actions with icons */
+.notification-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.notification-actions button svg {
+  font-size: 16px;
+}

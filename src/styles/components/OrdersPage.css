@@ -1,0 +1,73 @@
+.orders-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .filter-dropdown {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .orders-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .order-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 15px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .order-card p {
+    margin: 5px 0;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background: #007bff;
+    color: #fff;
+  }
+  

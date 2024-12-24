@@ -1,0 +1,113 @@
+/* rewardsPage.css */
+
+.rewards-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .filters select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .rewards-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .reward-item {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .reward-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .reward-item h4 {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .reward-item p {
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .reward-item .status {
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  
+  .reward-item .status.active {
+    color: #fff;
+    background-color: #28a745;
+  }
+  
+  .reward-item .status.expired {
+    color: #fff;
+    background-color: #dc3545;
+  }
+  
+  .reward-item button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reward-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+  
+  .empty-state {
+    text-align: center;
+    color: #666;
+  }
+  
+  .empty-state img {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  

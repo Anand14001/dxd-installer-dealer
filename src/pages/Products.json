@@ -1,0 +1,539 @@
+[
+    {
+      "id": 1,
+      "name": "Fenêtre PVC Classique",
+      "category": "Windows",
+      "features": {
+        "dimensions": ["Height", "Width"],
+        "material": ["PVC"],
+        "glassType": ["Double Glazing", "Triple Glazing", "Acoustic Glass", "Frosted Glass"],
+        "colorOptions": ["Red", "Blue", "Green", "White", "Grey", "Beige"],
+        "accessories": ["Handles", "Locks", "Decorative Grids", "Flyscreen"],
+        "additionalItems": ["Cleaning Kit", "Thermal Insulation Film", "Child Safety Lock"]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Fenêtre Aluminium Tilt & Turn",
+      "category": "Windows",
+      "features": {
+        "dimensions": ["Height", "Width"],
+        "material": ["Aluminium"],
+        "openingMechanism": ["Tilt & Turn", "Standard Hinged"],
+        "glassType": ["Tempered Glass", "Tinted Glass", "Solar Reflective Glass"],
+        "colorOptions": ["Bronze", "Black", "Metallic Silver", "White", "Matte Grey"],
+        "accessories": ["Safety Locks", "Handles (Chrome/Brass Finish)", "Weatherproof Strips"],
+        "additionalItems": ["Soundproofing Panels", "Anti-Theft Mechanism"]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Coulissant Aluminium (Sliding Window)",
+      "category": "Windows",
+      "features": {
+        "dimensions": ["Height", "Width"],
+        "material": ["Aluminium"],
+        "slidingMechanism": ["Single Track", "Double Track"],
+        "glassType": ["Laminated Glass", "Triple Glazed Glass", "Frosted Glass"],
+        "colorOptions": ["White", "Beige", "Dark Grey", "Black", "Matte Silver"],
+        "accessories": ["Flyscreen", "Soft-Close Mechanism"],
+        "additionalItems": ["Anti-Theft Bar", "Cleaning Kit"]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Galandage Aluminium (Pocket Sliding Window)",
+      "category": "Windows",
+      "features": {
+        "dimensions": ["Height", "Width"],
+        "material": ["Aluminium"],
+        "slidingMechanism": ["Full Pocket Sliding", "Partial Pocket Sliding"],
+        "glassType": ["UV-Filtered Glass", "Laminated Glass"],
+        "colorOptions": ["Graphite", "Matte Black", "Anthracite Grey", "White"],
+        "accessories": ["Handles", "Automation System"],
+        "additionalItems": ["Child Safety Lock", "Weatherproof Coating"]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Fenêtre Bois (Traditional Wooden Window)",
+      "category": "Windows",
+      "features": {
+        "dimensions": ["Height", "Width"],
+        "material": ["Wood"],
+        "finish": ["Varnished", "Painted", "Raw"],
+        "glassType": ["Single Glazed", "Double Glazed", "Acoustic Glass"],
+        "colorOptions": ["Natural", "Oak", "Walnut", "Dark Brown", "Teak"],
+        "accessories": ["Hinges", "Locks", "Decorative Carvings"],
+        "additionalItems": ["Maintenance Oil", "UV Protective Coating", "Anti-Termite Treatment"]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Volet Roulant PVC (Rolling Shutter)",
+      "category": "Shutters",
+      "features": {
+        "dimensions": ["Height", "Width"],
+        "material": ["PVC"],
+        "operation": ["Manual", "Motorized", "Remote-Controlled"],
+        "colorOptions": ["White", "Blue", "Green", "Grey", "Beige", "Dark Brown"],
+        "accessories": ["Safety Locks", "Noise-Reducing Strips", "Anti-Lift Device"],
+        "additionalFeatures": ["Thermal Insulation", "Solar-Powered Motor"],
+        "additionalItems": ["Maintenance Spray", "Cleaning Cloth"]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Volet Roulant Aluminium (Rolling Shutter)",
+      "category": "Shutters",
+      "features": {
+        "dimensions": ["Height", "Width"],
+        "material": ["Aluminium"],
+        "operation": ["Manual", "Motorized with Remote", "Smartphone-Controlled"],
+        "colorOptions": ["Metallic Grey", "Anthracite", "White", "Black"],
+        "accessories": ["Anti-Burglary System", "Wind-Resistant Slats", "Soft-Close Mechanism"],
+        "additionalFeatures": ["Fire-Resistant Coating", "Acoustic Insulation"],
+        "additionalItems": ["Solar-Powered Backup System", "Replacement Slats Kit"]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Volet Battant Bois (Hinged Wooden Shutter)",
+      "category": "Shutters",
+      "features": {
+        "dimensions": ["Height", "Width"],
+        "material": ["Wood"],
+        "finish": ["Varnished", "Painted", "Natural"],
+        "colorOptions": ["Oak", "Walnut", "Dark Brown", "White", "Teak"],
+        "accessories": ["Hinges (Decorative/Standard)", "Latches", "Weatherproof Coating"],
+        "additionalFeatures": ["Anti-Termite Treatment", "UV-Resistant Finish"],
+        "additionalItems": ["Replacement Hinges", "Decorative Carvings Kit"]
+      }
+    },
+    {
+      "id": 9,
+      "name": "Volet Battant Aluminium (Hinged Aluminium Shutter)",
+      "category": "Shutters",
+      "features": {
+        "dimensions": ["Height", "Width"],
+        "material": ["Aluminium"],
+        "operation": ["Manual", "Motorized"],
+        "finish": ["Matte", "Glossy", "Powder-Coated"],
+        "colorOptions": ["Metallic Silver", "Black", "Anthracite", "Beige"],
+        "accessories": ["Hinges (Adjustable)", "Anti-Theft Locks", "Noise Dampeners"],
+        "additionalFeatures": ["Wind-Resistant Frame", "Thermal Insulation Coating"],
+        "additionalItems": ["Motorized Control Kit", "Cleaning Spray"]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Volet Persiennes Aluminium (Louvered Shutter)",
+      "category": "Shutters",
+      "features": {
+        "dimensions": ["Height", "Width"],
+        "material": ["Aluminium"],
+        "finish": ["Matte", "Glossy", "Textured"],
+        "louverType": ["Fixed", "Adjustable"],
+        "colorOptions": ["Black", "White", "Anthracite", "Dark Grey"],
+        "accessories": ["Anti-Burglary Locks", "Child Safety Mechanism", "Decorative Frame"],
+        "additionalFeatures": ["UV-Resistant Finish", "Noise-Reducing Louvers"],
+        "additionalItems": ["Replacement Louvers Kit", "Decorative Handles"]
+      }
+    },  
+    
+        {
+          "id": 11,
+          "name": "Portes d'Entrée Monobloc Aluminium",
+          "category": "Portes d'Entrée (Entrance Doors)",
+          "features": {
+            "dimensions": ["Height", "Width"],
+            "material": ["Aluminium"],
+            "designStyle": ["Modern", "Minimalist", "Paneled"],
+            "glassType": ["Frosted Glass", "Clear Glass", "Decorative Patterns"],
+            "colorOptions": ["Metallic Silver", "Anthracite Grey", "White", "Black", "Bronze"],
+            "accessories": ["Handles (Chrome, Brass, Matte Black)", "Hinges", "Letterboxes"],
+            "securityFeatures": ["Multi-point Locking System", "Anti-Burglary Frame", "Digital Lock Compatibility"],
+            "additionalItems": ["Maintenance Spray", "Door Viewer"]
+          }
+        },
+        {
+          "id": 12,
+          "name": "Portes d'Entrée Parclosees Aluminium",
+          "category": "Portes d'Entrée (Entrance Doors)",
+          "features": {
+            "dimensions": ["Height", "Width"],
+            "material": ["Aluminium"],
+            "frameStyle": ["Classic Frame", "Slim Frame"],
+            "glassType": ["Tempered Glass", "UV-Filtered Glass", "Acoustic Glass"],
+            "colorOptions": ["Bronze", "Matte Black", "Metallic Grey", "White"],
+            "accessories": ["Door Knockers", "Decorative Handles", "Weather Seals"],
+            "securityFeatures": ["Reinforced Hinges", "Smart Lock Compatibility", "Anti-Lift Mechanism"],
+            "additionalItems": ["Replacement Frame Kits", "Cleaning Cloths"]
+          }
+        },
+        {
+          "id": 13,
+          "name": "Portes d'Entrée Vitrées Aluminium",
+          "category": "Portes d'Entrée (Entrance Doors)",
+          "features": {
+            "dimensions": ["Height", "Width"],
+            "material": ["Aluminium"],
+            "glassDesign": ["Full Glass", "Half Glass", "Patterned Glass"],
+            "glassType": ["Laminated Glass", "Frosted Glass", "Tinted Glass"],
+            "colorOptions": ["White", "Black", "Graphite", "Beige"],
+            "accessories": ["Decorative Frames", "Handles (Custom Design)", "Letterboxes"],
+            "securityFeatures": ["Bulletproof Glass Option", "Anti-Burglary Glass Panels", "Multi-point Locking System"],
+            "additionalItems": ["Replacement Glass Panels", "Safety Film"]
+          }
+        },
+        {
+          "id": 14,
+          "name": "Portes d'Entrée Acier (Steel Doors)",
+          "category": "Portes d'Entrée (Entrance Doors)",
+          "features": {
+            "dimensions": ["Height", "Width"],
+            "material": ["Steel"],
+            "designStyle": ["Industrial", "Contemporary"],
+            "finishOptions": ["Powder-Coated", "Matte Finish", "Textured Finish"],
+            "colorOptions": ["Metallic Black", "Dark Grey", "Brown", "White"],
+            "accessories": ["Peephole Viewer", "Steel Reinforced Frames", "Handles (Stainless Steel)"],
+            "securityFeatures": ["Fire-Resistant Core", "Anti-Break-In Frame", "Digital Lock Compatibility"],
+            "additionalItems": ["Fire-Resistant Coating", "Replacement Locks"]
+          }
+        },
+        {
+          "id": 15,
+          "name": "Portes d'Entrée Parclosees PVC",
+          "category": "Portes d'Entrée (Entrance Doors)",
+          "features": {
+            "dimensions": ["Height", "Width"],
+            "material": ["PVC"],
+            "designStyle": ["Classic", "Contemporary"],
+            "glassType": ["Frosted Glass", "Clear Glass", "Double Glazing"],
+            "colorOptions": ["White", "Beige", "Grey", "Dark Brown"],
+            "accessories": ["Hinges", "Handles (Customizable Finish)", "Door Viewer"],
+            "securityFeatures": ["Multi-point Locking System", "Reinforced Frames", "Anti-Theft Mechanism"],
+            "additionalItems": ["Replacement Frames", "Maintenance"]
+          }
+        },
+        {
+          "id": 16,
+          "name": "Store Banne (Retractable Awning)",
+          "category": "Stores & Pergolas (Awnings & Pergolas)",
+          "features": {
+            "dimensions": ["Width", "Projection"],
+            "material": {
+              "fabric": "Dropdown",
+              "aluminiumFrame": "Dropdown"
+            },
+            "fabricType": ["UV-Resistant", "Waterproof", "Fireproof"],
+            "colorOptions": {
+              "solidColors": ["White", "Grey", "Beige", "Green", "Blue"],
+              "patterns": ["Stripes", "Geometric Patterns"]
+            },
+            "operation": ["Manual Crank", "Motorized with Remote Control", "Smartphone-Controlled"],
+            "mountingOptions": ["Wall-Mounted", "Ceiling-Mounted"],
+            "additionalFeatures": ["Wind Sensor", "Integrated LED Lighting", "Adjustable Pitch Angle"],
+            "accessories": ["Remote Control", "Cleaning Kit", "Weatherproof Cover"],
+            "additionalItems": ["Safety Sensors", "Replacement Fabric Panels"]
+          }
+        },
+        {
+          "id": 17,
+          "name": "Store Intérieur (Interior Shade)",
+          "category": "Stores & Pergolas (Awnings & Pergolas)",
+          "features": {
+            "dimensions": ["Height", "Width"],
+            "material": "Fabric",
+            "fabricType": ["Light Filtering", "Blackout", "Thermal Insulation"],
+            "colorOptions": {
+              "solidColors": ["White", "Cream", "Grey", "Black"],
+              "textures": ["Linen", "Satin Finish"]
+            },
+            "operation": ["Manual", "Cordless", "Motorized"],
+            "mountingOptions": ["Inside Frame", "Outside Frame"],
+            "additionalFeatures": ["Child Safety Mechanism", "UV Protection Coating", "Flame Retardant Material"],
+            "accessories": ["Valance Clips", "Side Tracks for Full Blackout"],
+            "additionalItems": ["Replacement Cord Kits", "Maintenance Spray"]
+          }
+        },
+        {
+          "id": 18,
+          "name": "Pergola Aluminium (Aluminium Pergola)",
+          "category": "Stores & Pergolas (Awnings & Pergolas)",
+          "features": {
+            "dimensions": ["Length", "Width", "Height"],
+            "material": "Aluminium Frame",
+            "roofType": ["Fixed", "Louvered", "Retractable Canopy"],
+            "colorOptions": ["White", "Black", "Grey", "Bronze"],
+            "operation": ["Manual", "Motorized with Remote Control"],
+            "sidePanels": ["Glass", "Mesh Screens"],
+            "additionalFeatures": ["Integrated LED Lighting", "Rain and Wind Sensors", "Built-in Heating Elements"],
+            "accessories": ["Decorative Post Caps", "Maintenance Kit", "Weatherproof Coating"],
+            "additionalItems": ["Replacement Roof Slats", "Privacy Curtains"]
+          }
+        },
+        {
+          "id": 19,
+          "name": "Pergola Bioclimatique (Bioclimatic Pergola)",
+          "category": "Stores & Pergolas (Awnings & Pergolas)",
+          "features": {
+            "dimensions": ["Length", "Width", "Height"],
+            "material": "Aluminium Frame with Integrated Blades",
+            "bladeType": ["Adjustable Louvers", "Fixed Louvers"],
+            "colorOptions": ["Anthracite Grey", "Matte Black", "White", "Beige"],
+            "operation": ["Manual", "Motorized with Remote"],
+            "additionalFeatures": ["Solar Panel Integration", "Water Drainage System", "Integrated Speakers for Sound System"],
+            "accessories": ["Privacy Screens", "Lighting Kit (LED or Strip Lights)", "Smartphone Integration Hub"],
+            "additionalItems": ["Replacement Blades", "Decorative End Caps"]
+          }
+        },
+        {
+          "id": 20,
+          "name": "Store Vertical (Vertical Shade for Pergola)",
+          "category": "Stores & Pergolas (Awnings & Pergolas)",
+          "features": {
+            "dimensions": ["Height", "Width"],
+            "material": "Fabric or PVC",
+            "fabricType": ["Light Filtering", "Blackout"],
+            "colorOptions": ["White", "Grey", "Green", "Beige"],
+            "operation": ["Manual Crank", "Motorized with Remote"],
+            "mountingOptions": ["Side-Mounted", "Integrated into Pergola Frame"],
+            "additionalFeatures": ["Wind Resistance", "UV Protection Coating", "Easy-Clean Material"],
+            "accessories": ["Cord Clips", "Replacement Cord"],
+            "additionalItems": ["Privacy Screens", "Side Tracks"]
+          }
+        },
+            
+            {
+              "id": 21,
+              "name": "Véranda Aluminium (Aluminium Veranda)",
+              "category": "Vérandas",
+              "features": {
+                "dimensions": ["Length", "Width", "Height"],
+                "material": "Aluminium Frame",
+                "roofType": ["Polycarbonate", "Glass (Clear, Frosted, Tinted)", "Insulated Panels"],
+                "wallMaterial": ["Full Glass", "Half Wall with Glass", "Aluminium Panels"],
+                "colorOptions": ["White", "Anthracite Grey", "Matte Black", "Bronze", "Beige"],
+                "openingMechanism": ["Sliding Glass Panels", "Bi-Folding Doors", "Fixed Panels"],
+                "glassType": ["Tempered Glass", "Laminated Glass", "UV-Protected Glass"],
+                "additionalFeatures": ["Integrated Gutter System", "Thermal Insulation", "Soundproofing"],
+                "accessories": ["Decorative Frame Trims", "LED Lighting", "Roof Ventilation System"],
+                "additionalItems": ["Privacy Screens", "Maintenance Kit"]
+              }
+            },
+            {
+              "id": 22,
+              "name": "Véranda PVC (PVC Veranda)",
+              "category": "Vérandas",
+              "features": {
+                "dimensions": ["Length", "Width", "Height"],
+                "material": "PVC Frame",
+                "roofType": ["Polycarbonate", "PVC Panels", "Insulated Panels"],
+                "wallMaterial": ["Full Glass", "Half Wall with Glass", "PVC Panels"],
+                "colorOptions": ["White", "Beige", "Grey"],
+                "openingMechanism": ["Sliding Glass Panels", "Hinged Doors"],
+                "glassType": ["Double Glazing", "Frosted Glass", "Acoustic Glass"],
+                "additionalFeatures": ["UV-Resistant Coating", "Fireproof Materials", "Integrated Drainage System"],
+                "accessories": ["Roof Blinds", "Decorative Post Caps", "Weather Seals"],
+                "additionalItems": ["Replacement Panels", "Cleaning Kit"]
+              }
+            },
+            {
+              "id": 23,
+              "name": "Véranda Bois (Wooden Veranda)",
+              "category": "Vérandas",
+              "features": {
+                "dimensions": ["Length", "Width", "Height"],
+                "material": "Wood Frame",
+                "woodFinish": ["Natural Varnish", "Painted"],
+                "roofType": ["Polycarbonate", "Glass (Clear, Frosted)", "Wood Panels"],
+                "wallMaterial": ["Full Glass", "Half Wall with Glass", "Wooden Panels"],
+                "colorOptions": ["Natural", "Oak", "Teak", "Dark Brown"],
+                "openingMechanism": ["Hinged Wooden Doors", "Sliding Glass Panels"],
+                "glassType": ["Tempered Glass", "Frosted Glass", "UV-Protected Glass"],
+                "additionalFeatures": ["Anti-Termite Coating", "Weatherproof Wood Treatment", "Thermal Insulation"],
+                "accessories": ["Wooden Decorative Frames", "Roof Ventilation", "Lighting Options"],
+                "additionalItems": ["Maintenance Oil", "Replacement Slats"]
+              }
+            },
+            {
+              "id": 24,
+              "name": "Véranda Bioclimatique (Bioclimatic Veranda)",
+              "category": "Vérandas",
+              "features": {
+                "dimensions": ["Length", "Width", "Height"],
+                "material": "Aluminium Frame with Adjustable Louvers",
+                "louverType": ["Fixed Louvers", "Motorized Adjustable Louvers"],
+                "roofType": ["Louvered Roof", "Glass with Solar Control", "Insulated Roof Panels"],
+                "colorOptions": ["Anthracite Grey", "Matte Black", "White", "Beige"],
+                "openingMechanism": ["Sliding Glass Doors", "Folding Glass Walls"],
+                "glassType": ["Laminated Glass", "UV-Protected Glass", "Tinted Glass"],
+                "additionalFeatures": ["Rain and Wind Sensors", "Solar Panel Integration", "Thermal and Acoustic Insulation"],
+                "accessories": ["LED Lighting", "Side Blinds", "Built-in Heating Elements"],
+                "additionalItems": ["Replacement Louvers", "Privacy Screens"]
+              }
+            },
+            {
+              "id": 25,
+              "name": "Portail Aluminium (Aluminium Gate)",
+              "category": "Portails & Clôtures (Gates & Fences)",
+              "features": {
+                "dimensions": ["Height", "Width"],
+                "material": "Aluminium",
+                "type": ["Swing Gate", "Sliding Gate"],
+                "designStyle": ["Modern", "Traditional", "Minimalist"],
+                "colorOptions": ["White", "Anthracite Grey", "Black", "Bronze", "Green"],
+                "operation": ["Manual", "Motorized with Remote Control", "Smartphone-Controlled"],
+                "additionalFeatures": ["Anti-Climb Design", "Weather-Resistant Coating", "Soundproof Hinges"],
+                "accessories": ["Gate Stopper", "Safety Lock", "Integrated Mailbox"],
+                "additionalItems": ["Safety Sensors", "Replacement Tracks"]
+              }
+            },
+                {
+                  "id": 26,
+                  "name": "Portail PVC (PVC Gate)",
+                  "category": "Portails & Clôtures (Gates & Fences)",
+                  "features": {
+                    "dimensions": ["Height", "Width"],
+                    "material": "PVC",
+                    "type": ["Swing Gate", "Sliding Gate"],
+                    "panelStyle": ["Full Privacy", "Semi-Privacy", "Open Picket"],
+                    "colorOptions": ["White", "Beige", "Grey", "Green"],
+                    "operation": ["Manual", "Motorized"],
+                    "additionalFeatures": ["Anti-Fading UV Coating", "Weather-Resistant Frame"],
+                    "accessories": ["Hinges", "Decorative Post Caps", "Keyed Lock"],
+                    "additionalItems": ["Motor Replacement Kit", "Cleaning Kit"]
+                  }
+                },
+                {
+                  "id": 27,
+                  "name": "Clôtures Aluminium (Aluminium Fence)",
+                  "category": "Portails & Clôtures (Gates & Fences)",
+                  "features": {
+                    "dimensions": ["Height", "Length"],
+                    "material": "Aluminium",
+                    "designStyle": ["Horizontal Slats", "Vertical Slats", "Decorative Panels"],
+                    "colorOptions": ["White", "Black", "Anthracite Grey", "Metallic Silver", "Bronze"],
+                    "mountingOptions": ["Ground Mount", "Wall Mount"],
+                    "additionalFeatures": ["Anti-Climb Design", "Noise Reduction Panels"],
+                    "accessories": ["Decorative Caps", "Safety Lock for Gates", "Post Reinforcements"],
+                    "additionalItems": ["Installation Tools", "Replacement Panels"]
+                  }
+                },
+                {
+                  "id": 28,
+                  "name": "Clôtures PVC (PVC Fence)",
+                  "category": "Portails & Clôtures (Gates & Fences)",
+                  "features": {
+                    "dimensions": ["Height", "Length"],
+                    "material": "PVC",
+                    "designStyle": ["Full Privacy", "Semi-Privacy", "Lattice Top"],
+                    "colorOptions": ["White", "Beige", "Grey", "Green"],
+                    "mountingOptions": ["Ground Mount", "Wall Mount"],
+                    "additionalFeatures": ["UV-Resistant Coating", "Scratch-Resistant Panels"],
+                    "accessories": ["Decorative Post Caps", "Gate Locks", "Connector Kits"],
+                    "additionalItems": ["Maintenance Spray", "Replacement Panels"]
+                  }
+                },
+                {
+                  "id": 29,
+                  "name": "Porte de Garage Sectionnelle (Sectional Garage Door)",
+                  "category": "Portes de Garage (Garage Doors)",
+                  "features": {
+                    "dimensions": ["Height", "Width"],
+                    "material": ["Steel", "Aluminium"],
+                    "panelStyle": ["Smooth", "Ribbed", "Woodgrain Texture"],
+                    "colorOptions": ["White", "Anthracite Grey", "Black", "Beige", "Metallic Silver"],
+                    "operation": ["Manual", "Motorized with Remote Control", "Smartphone-Controlled"],
+                    "additionalFeatures": ["Thermal Insulation", "Soundproofing", "Weather Seals"],
+                    "securityFeatures": ["Anti-Lift Locking System", "Reinforced Tracks", "Auto-Lock Mechanism"],
+                    "accessories": ["Windows (Optional, Square or Round)", "Side Door Access", "Decorative Hardware"],
+                    "additionalItems": ["Safety Sensors", "Maintenance Kit"]
+                  }
+                },
+                {
+                  "id": 30,
+                  "name": "Porte de Garage Enroulable (Roller Garage Door)",
+                  "category": "Portes de Garage (Garage Doors)",
+                  "features": {
+                    "dimensions": ["Height", "Width"],
+                    "material": ["Aluminium", "Steel"],
+                    "operation": ["Manual", "Motorized with Remote Control"],
+                    "colorOptions": ["White", "Brown", "Dark Grey", "Black", "Green"],
+                    "slatType": ["Single Wall", "Double Wall with Insulation"],
+                    "additionalFeatures": ["Ventilation Grills", "Soundproofing"],
+                    "securityFeatures": ["Anti-Lift System", "Keypad Entry System"],
+                    "accessories": ["Safety Edge", "Battery Backup"],
+                    "additionalItems": ["Replacement Slats", "Remote Control Unit"]
+                  }
+                },
+                {
+                  "id": 31,
+                  "name": "Porte de Garage Latérale (Side-Hinged Garage Door)",
+                  "category": "Portes de Garage (Garage Doors)",
+                  "features": {
+                    "dimensions": ["Height", "Width"],
+                    "material": ["Steel", "Aluminium"],
+                    "panelStyle": ["Plain", "Decorative Paneling", "Woodgrain Finish"],
+                    "colorOptions": ["White", "Black", "Anthracite Grey", "Brown", "Green"],
+                    "operation": ["Manual", "Motorized with Push-Button Control"],
+                    "doorConfiguration": ["Single Door", "Double Door"],
+                    "additionalFeatures": ["Thermal Insulation", "Soundproofing", "Weatherproofing"],
+                    "securityFeatures": ["Multi-point Locking System", "Anti-Theft Hinges"],
+                    "accessories": ["Windows (Optional, Square or Oval)", "Handles (Customizable Finish)", "Door Stoppers"],
+                    "additionalItems": ["Safety Sensors", "Replacement Hinges"]
+                  }
+                },
+                {
+                  "id": 32,
+                  "name": "Porte de Garage Basculante (Up-and-Over Garage Door)",
+                  "category": "Portes de Garage (Garage Doors)",
+                  "features": {
+                    "dimensions": ["Height", "Width"],
+                    "material": ["Steel", "Aluminium"],
+                    "operation": ["Manual", "Motorized with Remote"],
+                    "finish": ["Powder-Coated", "Textured", "Matte"],
+                    "colorOptions": ["White", "Anthracite Grey", "Green", "Black", "Brown"],
+                    "additionalFeatures": ["Soundproofing", "Wind-Resistant Coating"],
+                    "securityFeatures": ["Anti-Lift Lock System", "Keyless Entry System"],
+                    "accessories": ["Integrated Lighting", "Ventilation Grills"],
+                    "additionalItems": ["Replacement Springs", "Remote Control"]
+                  }
+                },
+                {
+                  "id": 33,
+                  "name": "Motorisation (Gate Motors)",
+                  "category": "Gate Motors",
+                  "features": {
+                    "compatibleGates": ["Swing Gate", "Sliding Gate"],
+                    "powerSource": ["Solar-Powered", "Electric"],
+                    "controlOptions": ["Remote Control", "Smartphone Integration", "Keypad Entry"],
+                    "additionalFeatures": ["Safety Sensors", "Auto-Lock Mechanism", "Battery Backup"],
+                    "accessories": ["Additional Remotes", "Replacement Batteries"],
+                    "additionalItems": ["Installation Kit"]
+                  }
+                },
+              
+              
+            {
+                "id": 34,
+                "name": "Garde Corps Aluminium (Aluminium Railings)",
+                "category": "Railings",
+                "features": {
+                  "dimensions": {
+                    "height": "Numerical Input",
+                    "length": "Numerical Input"
+                  },
+                  "material": ["Aluminium"],
+                  "designStyle": ["Modern", "Traditional", "Glass-Integrated"],
+                  "colorOptions": ["White", "Black", "Metallic Silver", "Bronze"],
+                  "glassType": ["Clear", "Frosted", "Tinted"],
+                  "mountingOptions": ["Floor Mount", "Wall Mount"],
+                  "accessories": ["End Caps", "Handrails", "Decorative Inserts"],
+                  "additionalFeatures": ["Weatherproof Coating", "Anti-Rust Treatment"],
+                  "additionalItems": ["Maintenance Kit", "Replacement Glass Panels"]
+                }
+              }
+              
+  ]

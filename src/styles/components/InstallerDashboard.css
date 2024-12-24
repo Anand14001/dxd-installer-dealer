@@ -1,0 +1,125 @@
+/* General container styling */
+.container1 {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Header styling */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Logout button */
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Section spacing */
+.dashboard-section {
+  margin-bottom: 20px;
+}
+
+/* Project item styling */
+.projects-section .project-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Status button */
+.status-button {
+  margin: 5px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.status-button:hover {
+  background-color: green;
+}
+
+.status-button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Status options menu */
+.status-options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+}
+
+.status-options button {
+  margin: 5px 0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.status-options button:hover {
+  background-color: #0056b3;
+}
+
+/* Notifications styling */
+.notifications-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notifications-section li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* Section styling */
+.project-status-section,
+.reports-section,
+.projects-section {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Status summary */
+.status-summary p {
+  margin: 5px 0;
+}
+
+/* Reports section */
+.reports-section p {
+  margin: 5px 0;
+  font-weight: bold;
+}

@@ -1,0 +1,279 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+/* Loading Spinner */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Referral Container */
+.referral-container {
+  border: 2px dashed #0056d2; /* Dashed border for emphasis */
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    width: 90%; /* More fluid design for smaller screens */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow for contrast */
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.referral-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.referral-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0056d2;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* Actions Container */
+.actions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.action-button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #45a049;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.share-button {
+  background-color: #007bff;
+}
+
+.share-button:hover {
+  background-color: #0056b3;
+}
+
+/* QR Code Container */
+.qr-code-container {
+  margin: 20px 0;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code-container h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Rewards Container */
+.rewards-container {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #e3fcef;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+
+.rewards-container h3 {
+  font-size: 20px;
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.rewards-container p {
+  font-size: 16px;
+  color: #2e7d32;
+}
+
+/* Referrals History */
+.referrals-history {
+  width: 90%;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.referrals-history h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.referrals-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.referrals-history li {
+  font-size: 14px;
+  color: #555555;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+}
+
+.referrals-history li:hover {
+  background-color: #f8f9fa;
+}
+
+.referrals-history li:last-child {
+  border-bottom: none;
+}
+
+/* Referral History Item */
+.referral-history-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.referral-history-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #444444;
+}
+
+.referral-history-item p strong {
+  color: #333333;
+}
+
+/* QR Code Modal */
+.qr-code-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  max-width: 90%;
+  width: 400px;
+}
+
+.modal-content h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .referral-container, .rewards-container, .referrals-history {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .referral-text {
+    font-size: 24px;
+  }
+
+  .action-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .qr-code-container {
+    padding: 15px;
+  }
+}

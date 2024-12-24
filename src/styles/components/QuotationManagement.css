@@ -1,0 +1,219 @@
+improve css of this /* Container styling for the entire component */
+.quotation-management-container {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light background to differentiate from cards */
+    min-height: 100vh; /* Ensure the container covers the full height */
+    font-family: 'Arial', sans-serif; /* Set a clean, modern font */
+  }
+  
+  /* Header styling */
+  .quotation-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Dark color for better contrast */
+    font-weight: bold;
+  }
+  
+  /* Quotation card styling */
+  .quotation-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .quotation-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quotation-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .quotation-card p strong {
+    color: #333;
+  }
+
+
+  .quotation-search {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line on smaller screens */
+    gap: 10px; /* Space between items */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the search bar */
+  .quotation-search input,
+.quotation-search select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.quotation-search input:focus,
+.quotation-search select:focus {
+  border-color: #007bff; /* Blue border when focused */
+  outline: none;
+}
+
+.quotation-search input {
+  flex: 1; /* Input takes up remaining space */
+  min-width: 200px; /* Ensure a minimum width for smaller screens */
+}
+
+.quotation-search select {
+  min-width: 150px; /* Adjust as needed */
+}
+  
+  /* Quotation action (input fields) styling */
+  .quotation-actions input {
+    margin-right: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100px;
+  }
+  
+  .quotation-actions input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Commission and price input styling */
+  .quotation-actions .estimate-price input,
+  .quotation-actions .commission-percentage input {
+    width: 150px;
+  }
+  
+  /* Dropdown for payment status */
+  .quotation-actions select {
+    margin-right: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 150px;
+  }
+  
+  .quotation-actions select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button styling for approving/rejecting quotations */
+  .quotation-status-actions button {
+    margin-right: 15px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .quotation-status-actions button:hover {
+    opacity: 0.9;
+  }
+  
+  .quotation-status-actions button:active {
+    transform: scale(0.98); /* Slight scale effect */
+  }
+  
+  .quotation-status-actions button:first-child {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .quotation-status-actions button:first-child:hover {
+    background-color: #45a049;
+  }
+  
+  .quotation-status-actions button:first-child:active {
+    background-color: #387a38; /* Darker shade when clicked */
+  }
+  
+  .quotation-status-actions button:last-child {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .quotation-status-actions button:last-child:hover {
+    background-color: #e53935;
+  }
+  
+  .quotation-status-actions button:last-child:active {
+    background-color: #d32f2f; /* Darker shade when clicked */
+  }
+  
+  
+  /* Style for "Notification Sent" */
+  .quotation-status-actions p {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  /* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 16px;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
+  
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    .quotation-card {
+      padding: 15px;
+    }
+  
+    .quotation-actions input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .quotation-actions select {
+      width: 100%;
+    }
+  
+    .quotation-status-actions button {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+ 

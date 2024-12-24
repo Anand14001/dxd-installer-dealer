@@ -1,0 +1,485 @@
+/* General container styling */
+.product-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header styling */
+  .product-page h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Search and filter section */
+  .search-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-filter input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-filter select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Product list styling */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Product card styling */
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+    text-transform: capitalize;
+  }
+  
+  .product-card button {
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .product-card button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Cart styling */
+  .cart {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .cart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cart ul li {
+    font-size: 14px;
+    color: #555;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    align-items:center;
+  }
+  
+  .cart ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .cart button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item-name {
+    flex: 1;
+    margin-right: 15px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  .cart button:hover {
+    background-color: #0056b3;
+  }
+
+  .delete-icon {
+    color: #f44336;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .delete-icon:hover {
+    color: #d32f2f;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 90%; /* Ensure the popup fits within the viewport */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Allow scrolling inside the popup if content overflows */
+    position: relative;
+  }
+  
+  .popup-content input,
+.popup-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .tabs button.active-tab {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+
+  .tabs button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form input,
+  .form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .close-button:hover {
+    background-color: #ff4f41;
+    color: #ffff;
+    font-weight: bold;
+  }
+  
+  .submit-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+
+  /* General Feature Section Styling */
+.feature-section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-section label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Input Styling */
+.feature-section input[type="text"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Dropdown Styling */
+.feature-section select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.feature-section select:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Checkbox Group Styling */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+/* Checkbox Input Styling */
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #4caf50; /* Custom checkbox color */
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feature-section {
+    gap: 5px;
+  }
+
+  .checkbox-group {
+    gap: 10px;
+  }
+
+  .feature-section label {
+    font-size: 14px;
+  }
+
+  .feature-section input[type="text"], 
+  .feature-section select {
+    font-size: 12px;
+  }
+}
+
+
+  /* Pagination Container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Individual Page Number */
+  .pagination button {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px;
+  }
+  
+  /* Hover Effect for Page Numbers */
+  .pagination button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Active Page Styling */
+  .pagination .active {
+    background-color: #4caf50;
+    color: white;
+    border-color: #4caf50;
+  }
+  
+  /* Disabled Page Button */
+  .pagination .disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+  }
+
+  /* Active Page Styling */
+.pagination .active {
+    background-color: #4caf50; /* Highlight color */
+    color: white; /* Text color */
+    border-color: #4caf50; /* Border color */
+    font-weight: bold; /* Make the text bold */
+  }
+
+  .form-section {
+    margin-bottom: 20px;
+  }
+  .form-section h3 {
+    margin-bottom: 10px;
+  }
+  .form-section label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Responsive Design for Pagination */
+  @media (max-width: 768px) {
+    .pagination button {
+      font-size: 12px;
+      padding: 6px 8px;
+    }
+  }
+  
+  
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .search-filter {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .search-filter input {
+      width: 100%;
+    }
+  
+    .product-list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .product-card {
+      padding: 10px;
+    }
+  
+    .product-card h3 {
+      font-size: 16px;
+    }
+  
+    .product-card button {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  
+    .cart {
+      padding: 15px;
+    }
+  
+    .cart h2 {
+      font-size: 20px;
+    }
+  
+    .cart button {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+  
