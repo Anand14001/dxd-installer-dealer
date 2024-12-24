@@ -153,7 +153,6 @@ const QuotationManagement = () => {
           await addDoc(collection(db, "Notification"), {
             message: `Your Quotation for has been Rejected. Please rebiew and resubmit.`,
             createdAt: new Date(),
-            userId, // Assuming you want to associate the notification with the userId
             read: "false",
             type:"alert"
           });
