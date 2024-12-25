@@ -6,6 +6,79 @@ import { db, auth } from "../services/firebase";
 import { addDoc, collection, getFirestore, setDoc, doc, getDoc } from "firebase/firestore"; // Firebase Firestore import
 import { useNavigate } from 'react-router-dom';
 
+import fenetrePvcStandard from "../assets/fenetre-pvc-standard.jpg"; // Fenêtre PVC Standard
+import FenêtreAluminiumTiltTurn from "../assets/Fenêtre Aluminium Tilt & Turn.jpg"; // Fenêtre Aluminium Tilt & Turn
+import AcousticGlassCoulissantAluminium from "../assets/CoulissantAluminium.jpg"; // Coulissant Aluminium (Sliding Window)
+import GalandageAluminium from "../assets/CoulissantAluminium.jpg"; // Galandage Aluminium (Pocket Sliding Window)
+import FenêtreBois from "../assets/fenetre-pvc-standard.jpg"; // Fenêtre Bois (Traditional Wooden Window)
+import VoletRoulantPVC from "../assets/Fenêtre Aluminium Tilt & Turn.jpg"; // Volet Roulant PVC (Rolling Shutter)
+import VoletRoulantAluminium from "../assets/CoulissantAluminium.jpg"; // Volet Roulant Aluminium (Rolling Shutter)
+import VoletBattantBois from "../assets/CoulissantAluminium.jpg"; // Volet Battant Bois (Hinged Wooden Shutter)
+import VoletBattantAluminium from "../assets/fenetre-pvc-standard.jpg"; // Volet Battant Aluminium (Hinged Aluminium Shutter)
+import VoletPersiennesAluminium from "../assets/Fenêtre Aluminium Tilt & Turn.jpg"; // Volet Persiennes Aluminium (Louvered Shutter)
+import PortesEntréeMonoblocAluminium from "../assets/CoulissantAluminium.jpg"; // Portes d'Entrée Monobloc Aluminium
+import PortesEntréeParcloseesAluminium from "../assets/CoulissantAluminium.jpg"; // Portes d'Entrée Parclosees Aluminium
+import PortesEntréeVitréesAluminium from "../assets/fenetre-pvc-standard.jpg"; // Portes d'Entrée Vitrées Aluminium
+import PortesEntréeAcier from "../assets/Fenêtre Aluminium Tilt & Turn.jpg"; // Portes d'Entrée Acier
+import PortesEntréeParcloseesPVC from "../assets/CoulissantAluminium.jpg"; // Portes d'Entrée Parclosees PVC
+import StoreBanne from "../assets/CoulissantAluminium.jpg"; // Store Banne (Retractable Awning)
+import StoreIntérieur from "../assets/fenetre-pvc-standard.jpg"; // Store Intérieur (Interior Shade)
+import PergolaAluminium from "../assets/Fenêtre Aluminium Tilt & Turn.jpg"; // Pergola Aluminium
+import PergolaBioclimatique from "../assets/CoulissantAluminium.jpg"; // Pergola Bioclimatique
+import StoreVertical from "../assets/CoulissantAluminium.jpg"; // Store Vertical (Vertical Shade for Pergola)
+import VérandaAluminium from "../assets/fenetre-pvc-standard.jpg"; // Véranda Aluminium
+import VérandaPVC from "../assets/Fenêtre Aluminium Tilt & Turn.jpg"; // Véranda PVC
+import VérandaBois from "../assets/CoulissantAluminium.jpg"; // Véranda Bois
+import VérandaBioclimatique from "../assets/CoulissantAluminium.jpg"; // Véranda Bioclimatique
+import PortailAluminium from "../assets/fenetre-pvc-standard.jpg"; // Portail Aluminium
+import PortailPVC from "../assets/Fenêtre Aluminium Tilt & Turn.jpg"; // Portail PVC
+import ClôturesAluminium from "../assets/CoulissantAluminium.jpg"; // Clôtures Aluminium
+import ClôturesPVC from "../assets/CoulissantAluminium.jpg"; // Clôtures PVC
+import PorteGarageSectionnelle from "../assets/fenetre-pvc-standard.jpg"; // Porte de Garage Sectionnelle
+import PorteGarageEnroulable from "../assets/Fenêtre Aluminium Tilt & Turn.jpg"; // Porte de Garage Enroulable
+import PorteGarageLatérale from "../assets/CoulissantAluminium.jpg"; // Porte de Garage Latérale
+import PorteGarageBasculante from "../assets/CoulissantAluminium.jpg"; // Porte de Garage Basculante
+import Motorisation from "../assets/fenetre-pvc-standard.jpg"; // Motorisation (Gate Motors)
+import GardeCorpsAluminium from "../assets/Fenêtre Aluminium Tilt & Turn.jpg"; // Garde Corps Aluminium (Aluminium Railings)
+
+
+  const productImages = {
+    1: fenetrePvcStandard,
+    2: FenêtreAluminiumTiltTurn,
+    3: AcousticGlassCoulissantAluminium,
+    4: GalandageAluminium,
+    5: FenêtreBois,
+    6: VoletRoulantPVC,
+    7: VoletRoulantAluminium,
+    8: VoletBattantBois,
+    9: VoletBattantAluminium,
+    10: VoletPersiennesAluminium,
+    11: PortesEntréeMonoblocAluminium,
+    12: PortesEntréeParcloseesAluminium,
+    13: PortesEntréeVitréesAluminium,
+    14: PortesEntréeAcier,
+    15: PortesEntréeParcloseesPVC,
+    16: StoreBanne,
+    17: StoreIntérieur,
+    18: PergolaAluminium,
+    19: PergolaBioclimatique,
+    20: StoreVertical,
+    21: VérandaAluminium,
+    22: VérandaPVC,
+    23: VérandaBois,
+    24: VérandaBioclimatique,
+    25: PortailAluminium,
+    26: PortailPVC,
+    27: ClôturesAluminium,
+    28: ClôturesPVC,
+    29: PorteGarageSectionnelle,
+    30: PorteGarageEnroulable,
+    31: PorteGarageLatérale,
+    32: PorteGarageBasculante,
+    33: Motorisation,
+    34: GardeCorpsAluminium
+  };
+
 const ProductPage = () => {
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [cart, setCart] = useState([]);
@@ -194,14 +267,14 @@ const ProductPage = () => {
         onClick={() => navigate(`/product-details/${product.id}`)} // Navigate to product details
       >
         <img
-          src={product.image}
+          src={productImages[product.imageId]}
           alt={product.name}
           className="product-image"
         />
         <h3>{product.name}</h3>
         <p>{product.category}</p>
       </div>
-            <button onClick={() => addToCart(product)}>Add to Quotation</button>
+            <button onClick={() => navigate(`/product-details/${product.id}`)}>Add to Quotation</button>
           </div>
         ))}
       </div>

@@ -1,166 +1,498 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+  line-height: 1.6;
+}
+
 .product-detail-page {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .back-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .back-button:hover {
-    background-color: #0056b3;
-  }
-  
+  padding: 30px 40px;
+  background-color: #ffffff;
+}
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Center content horizontally */
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;  /* Allow the header to grow and center itself */
+}
+
+/* Back button Styling */
+.back-button121 {
+  background: #007bff;
+  border: none;
+  font-size: 16px;
+  color: #ffff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.back-button121:hover {
+  color: white;
+  text-decoration: underline;
+  background-color: #0056b3;
+}
+
+
+/* Product Detail Container */
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.product-image-container {
+  flex: 1 1 40%;
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+.product-info {
+  flex: 2 1 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-info div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+input[type="number"]:disabled {
+  background-color: #f9f9f9;
+  border-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.product-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.product-category {
+  font-size: 18px;
+  font-weight: 500;
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #28a745;
+  margin-top: 20px;
+}
+
+/* Product Features Section */
+.product-features {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Section Heading */
+.product-features h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+/* Select Box for Features */
+.product-features select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.product-features select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Disabled State for Select Box */
+.product-features select:disabled {
+  background-color: #f9f9f9;
+  border-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+/* Multi-Option Feature Inputs (Checkboxes or Radio Buttons) */
+.product-features .feature-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.product-features .feature-options label {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.product-features input[type="checkbox"],
+.product-features input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #007bff;
+  transition: transform 0.2s ease;
+}
+
+.product-features input[type="checkbox"]:focus,
+.product-features input[type="radio"]:focus {
+  transform: scale(1.2);
+}
+
+.product-features .feature-options input[type="checkbox"]:disabled,
+.product-features .feature-options input[type="radio"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Description text for the options */
+.product-features .feature-options span {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+.add-to-cart-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+.glazing-options {
+  margin-top: 25px;
+}
+
+.glazing-options h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.options-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.option {
+  flex: 1 1 120px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.option img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.option p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.option:hover {
+  border-color: #007bff;
+  transform: translateY(-5px);
+}
+
+.option.selected {
+  border-color: #007bff;
+  background-color: #e6f2ff;
+}
+
+/* Base styles for the checkbox */
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* Custom checkbox appearance */
+.custom-checkbox span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 4px; /* Change to 50% for a circular checkbox */
+  transition: all 0.3s ease;
+}
+
+/* Add a checkmark when checked */
+.custom-checkbox input[type="checkbox"]:checked + span::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 6px;
+  height: 10px;
+  border: solid #007bff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+/* Hover effect */
+.custom-checkbox span:hover {
+  background-color: #e6f7ff;
+  border-color: #007bff;
+}
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+}
+
+.form-section {
+  margin-bottom: 25px;
+}
+
+.form-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+label input,
+label textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.close-button,
+.submit-button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.close-button:hover {
+  background-color: #999;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .product-detail-container {
-    display: flex;
-    gap: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
-  }
-  
-  .product-image-container {
-    flex: 1;
-    max-width: 100%; /* Ensures the image container does not exceed the parent's width */
-  }
-  
-  .product-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .product-info {
-    flex: 2;
-    display: flex;
     flex-direction: column;
-    gap: 15px;
   }
-  
+
+  .product-info {
+    margin-top: 20px;
+  }
+
+  .options-container {
+    flex-wrap: wrap;
+  }
+
   .product-name {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
+    font-size: 26px;
   }
-  
-  .product-category,
-  .product-description,
-  .product-price {
-    font-size: 1rem;
-    color: #555;
+
+  .product-category {
+    font-size: 16px;
   }
-  
-  .product-price {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #28a745;
-  }
-  
-  .product-features h3 {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  .product-features ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .product-features li {
-    margin: 8px 0;
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  .add-to-cart-button {
-    margin-top: 20px;
-    background-color: #ff5722;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .add-to-cart-button:hover {
-    background-color: #e64a19;
-  }
-  
-  .error-message {
-    font-size: 1.2rem;
-    color: #dc3545;
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .product-detail-container {
-      flex-direction: column; /* Stacks the image and info vertically */
-      padding: 15px;
-    }
-  
-    .product-image-container,
-    .product-info {
-      flex: none; /* Removes flex-grow and flex-shrink behavior */
-      width: 100%;
-    }
-  
-    .product-name {
-      font-size: 1.5rem;
-    }
-  
-    .product-price {
-      font-size: 1.3rem;
-    }
-  
-    .add-to-cart-button {
-      width: 100%; /* Full-width button for better usability on smaller screens */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .back-button {
-      margin-bottom: 10px;
-    }
-  
-    .product-name {
-      font-size: 1.2rem;
-    }
-  
-    .product-price {
-      font-size: 1.1rem;
-    }
-  
-    .add-to-cart-button {
-      padding: 10px 15px;
-      font-size: 0.9rem;
-    }
-  }
-  
+}
+
+/* Color Selection */
+.color-selection {
+  margin-top: 30px;
+}
+
+.color-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  padding: 12px 12px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.color-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added elevation (shadow) */
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover for effect */
+}
+
+.color-circle.selected {
+  border-color: #28a745;
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow when selected */
+}
