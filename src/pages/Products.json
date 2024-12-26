@@ -68,7 +68,7 @@
       "material": ["Wood"],
       "finish": ["Varnished", "Painted", "Raw"],
       "glassType": ["Single Glazed", "Double Glazed", "Acoustic Glass"],
-      "colorOptions": ["Natural", "Oak", "Walnut", "Dark Brown", "Teak"],
+      "colorOptions": ["Natural", "Oak", "Walnut", "DarkBrown", "Teak"],
       "accessories": ["Hinges", "Locks", "Decorative Carvings"],
       "additionalItems": ["Maintenance Oil", "UV Protective Coating", "Anti-Termite Treatment"]
     }

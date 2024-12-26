@@ -19,7 +19,7 @@ import RewardsPage from "./pages/RewardPage.js";
 import ProjectPage from "./pages/ProjectPage.js";
 import AssignmentPage from "./pages/Assignment.js";
 import ProjectStatusPage from "./pages/ProjectStatusPage.js";
-import ProjectRequestPage from "./pages/projectRequestPage.js";
+import ProjectRequestPage from "./pages/projectRequest.js";
 
 const Navbar = ({userRole, handleLogout}) => {
   const location = useLocation(); // Get the current location

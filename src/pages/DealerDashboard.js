@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { auth } from "../services/firebase";
 import { signOut } from "firebase/auth";
 import {
@@ -12,6 +12,32 @@ import {
 import { db } from "../services/firebase";
 import { useNavigate } from "react-router-dom";
 import "../styles/components/DealerDashboard.css";
+import { Bar, Pie, Line } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+  ArcElement,
+  PointElement,
+  LineElement, // Import LineElement
+} from "chart.js";
+
+// Register chart elements
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+  ArcElement,
+  PointElement,
+  LineElement // Register LineElement for the Line chart
+);
 
 const DealerDashboard = () => {
   const [dealerName, setDealerName] = useState("");
@@ -29,6 +55,8 @@ const DealerDashboard = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [totalCommission, setTotalCommission] = useState(0);
+  const lineChartRef = useRef(null);
+  const pieChartRef = useRef(null);
 
   useEffect(() => {
     if (orders.length > 0) {
@@ -36,7 +64,6 @@ const DealerDashboard = () => {
       setTotalCommission(total);
     }
   }, [orders]);
-  
 
   const navigate = useNavigate();
 
@@ -109,7 +136,6 @@ const DealerDashboard = () => {
     setFilteredOrders(filtered);
     setCurrentPage(1); // Reset to the first page
   };
-  
 
   // Handle pagination
   const indexOfLastOrder = currentPage * ordersPerPage;
@@ -156,6 +182,56 @@ const DealerDashboard = () => {
     </div>
   );
 
+  // Prepare chart data
+  const ordersByStatus = orders.reduce((acc, order) => {
+    acc[order.status] = (acc[order.status] || 0) + 1;
+    return acc;
+  }, {});
+
+  const earningsOverTime = orders.map((order) => ({
+    date: new Date(order.timestamp).toLocaleDateString(),
+    earnings: order.commissionValue || 0,
+  }));
+
+  const earningsData = {
+    labels: earningsOverTime.map((entry) => entry.date),
+    datasets: [
+      {
+        label: "Earnings",
+        data: earningsOverTime.map((entry) => entry.earnings),
+        backgroundColor: "rgba(54, 162, 235, 0.5)",
+        borderColor: "rgba(54, 162, 235, 1)",
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  const orderStatusData = {
+    labels: ["Approved", "Pending", "Rejected"], // Updated labels
+    datasets: [
+      {
+        label: "Orders by Status",
+        data: [
+          ordersByStatus["Approved"] || 0,
+          ordersByStatus["Pending"] || 0,
+          ordersByStatus["Rejected"] || 0,
+        ],
+        backgroundColor: ["#4CAF50", "#FF9800", "#F44336"], // Specific color for Pending
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  // Cleanup the chart when the component unmounts or data changes
+  useEffect(() => {
+    if (lineChartRef.current) {
+      const existingChart = ChartJS.getChart(lineChartRef.current);
+      if (existingChart) {
+        existingChart.destroy();
+      }
+    }
+  }, [lineChartRef]);
+
   return (
     <div className="dashboard-container1">
       <div className="dashboard-header1">
@@ -169,21 +245,19 @@ const DealerDashboard = () => {
         <div>
           <h2>Welcome, {dealerName}</h2>
 
-
           {/* My Orders Section */}
           <div className="dashboard-section1">
             <h3>My Orders</h3>
             <div className="container1">
-               {/* Search and Filter */}
-          <div className="search-filter">
-            <input
-              type="text"
-              placeholder="Search orders..."
-              value={searchTerm}
-              onChange={handleSearch}
-            />
-            
-          </div>
+              {/* Search and Filter */}
+              <div className="search-filter">
+                <input
+                  type="text"
+                  placeholder="Search orders..."
+                  value={searchTerm}
+                  onChange={handleSearch}
+                />
+              </div>
               {currentOrders.length > 0 ? (
                 currentOrders.map((order) => <OrderItem key={order.id} order={order} />)
               ) : (
@@ -232,6 +306,21 @@ const DealerDashboard = () => {
               <p>
                 <strong>Total Referrals:</strong> {referralData.totalReferrals || 0}
               </p>
+            </div>
+          </div>
+
+          {/* Reports Section */}
+          <div className="dashboard-section1">
+            <h3>Reports</h3>
+            <div className="chart-container">
+              <div>
+                <h4>Earnings Over Time</h4>
+                <Line data={earningsData} ref={lineChartRef} />
+              </div>
+              <div>
+                <h4>Orders by Status</h4>
+                <Pie data={orderStatusData} ref={pieChartRef} />
+              </div>
             </div>
           </div>
         </div>
